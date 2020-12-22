@@ -18,6 +18,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+:root {
+  --common-text-color: #37352F;
+}
 .omnipack-badge {
   position: fixed;
   width: 100%;
@@ -1465,7 +1469,7 @@ section.opack-container {
 .opack-title {
   max-width: 450px;
   color: #1D1D1F;
-  margin: 0 0 12px 0;
+  margin: 0 0 24px 0;
   padding: 0;
 }
 .opack-title.center h1,
@@ -1501,8 +1505,8 @@ section.opack-container {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 500;
-  color: #696969;
+  font-weight: 400;
+  color: var(--common-text-color);
   padding: 0;
   margin: 0;
   white-space: pre-line;
@@ -2435,10 +2439,11 @@ section.opack-container {
 .page-container--section.company .about-company--container .company-short-description p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1.5em;
   margin: 40px 0 0 0;
   padding: 0;
+  color: #37352F;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .page-container--section.company .about-company--container .company-short-description p {
@@ -2530,8 +2535,9 @@ section.opack-container {
 .page-container--section.customers .customers-container .description-map p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1.5em;
+  color: #37352F;
   max-width: 540px;
   margin: 0;
   padding: 0;
@@ -2711,7 +2717,7 @@ h1.mainheader {
 .breadcrumbs .crumb a,
 .breadcrumbs .crumb p {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   color: #ff9500;
   font-size: 17px;
   line-height: 20px;

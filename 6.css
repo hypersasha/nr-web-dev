@@ -251,6 +251,12 @@
   box-shadow: 0 0 0 20px #F5F5F5;
   background: #F5F5F5;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .blog-container .latest-post:hover {
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
 .blog-container .latest-post .cover {
   width: auto;
   height: 360px;
@@ -303,6 +309,12 @@
 .blog-container .old-posts .old-post:hover {
   box-shadow: 0 0 0 20px #F5F5F5;
   background: #F5F5F5;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .blog-container .old-posts .old-post:hover {
+    box-shadow: none;
+    background-color: transparent;
+  }
 }
 .blog-container .old-posts .old-post .cover {
   width: auto;

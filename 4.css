@@ -492,7 +492,7 @@
   }
 }
 .page-container--section.company .about-company--container .robot-anim {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .page-container--section.company .about-company--container .robot-anim {
@@ -520,7 +520,7 @@
   width: 440px;
   height: 526px;
   position: relative;
-  background-image: url(/assets/images/robot-steel-2.jpg);
+  background-image: url(/assets/images/robot-steel.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 3;
@@ -615,7 +615,7 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .page-container--section.contacts {
     padding: 0;
-    padding-top: 80px;
+    padding-top: 30px;
   }
   .page-container--section.contacts .subheader {
     padding: 0 20px;

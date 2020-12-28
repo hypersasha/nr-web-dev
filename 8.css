@@ -142,4 +142,24 @@
   text-transform: uppercase;
   color: #666666;
 }
+.action-button-orange {
+  padding: 14px 16px;
+  border-radius: 10px;
+  text-align: center;
+  background: #ff9500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.action-button-orange.grey {
+  background: #DCDCDC;
+  color: #464646;
+}
+.action-button-orange:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
 

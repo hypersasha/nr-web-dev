@@ -236,6 +236,11 @@
 .blog-container {
   padding-top: 80px;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .blog-container {
+    padding-top: 60px;
+  }
+}
 .blog-container .blog-posts {
   max-width: 940px;
   margin: 0 auto 60px;

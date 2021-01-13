@@ -301,7 +301,6 @@
     align-items: flex-start;
     padding: 0;
     height: auto;
-    margin-bottom: 0;
   }
 }
 .page-container--section a {
@@ -319,21 +318,21 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .page-container--section .product-card {
     max-width: none;
-    padding: 40px 20px;
+    padding: 40px 20px 20px;
     align-items: center;
     width: 100vw;
     box-sizing: border-box;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  .page-container--section .product-card.omnipack {
+  .page-container--section .product-card {
     background: #f5f5f5;
   }
-  .page-container--section .product-card.omnipack .product-card--name {
+  .page-container--section .product-card .product-card--name {
     color: #000000;
   }
-  .page-container--section .product-card.omnipack .product-card--description {
-    color: #000000;
+  .page-container--section .product-card .product-card--description {
+    color: #3c3c3c;
   }
 }
 .page-container--section .product-card--name {
@@ -344,7 +343,7 @@
   color: #ffffff;
   margin: 0 0 6px 0;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .page-container--section .product-card--name {
     font-size: 32px;
   }
@@ -360,9 +359,7 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .page-container--section .product-card--description {
     text-align: center;
-    padding-top: 0;
     font-size: 21px;
-    line-height: 1.5em;
   }
 }
 .page-container--section .product-card--actions {
@@ -424,11 +421,20 @@
   height: 620px;
   z-index: 1;
 }
+.page-container--section .video-wrapper .opack_preview_image {
+  display: none;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .page-container--section .video-wrapper {
     position: relative;
     width: auto;
     height: 240px;
+  }
+  .page-container--section .video-wrapper .opack_preview_vid {
+    display: none;
+  }
+  .page-container--section .video-wrapper .opack_preview_image {
+    display: block;
   }
 }
 .page-container--section .video-wrapper video,

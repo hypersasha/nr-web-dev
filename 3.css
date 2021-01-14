@@ -489,31 +489,6 @@ section .section-text.centered {
     justify-content: center;
   }
 }
-.iphone-border {
-  width: 896px;
-  height: 448px;
-  background-size: 896px 448px;
-  background-image: url(/assets/images/iphone-xr.png);
-  margin: 40px auto 60px;
-  display: flex;
-  justify-content: stretch;
-  align-items: stretch;
-}
-.iphone-border .yt-player-iphone {
-  flex-grow: 1;
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  .iphone-border .yt-player-iphone {
-    margin: 0;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  .iphone-border {
-    background: transparent;
-    width: auto;
-    height: 190px;
-  }
-}
 .omnipack-link {
   display: flex;
   align-items: center;

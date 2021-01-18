@@ -109,6 +109,15 @@ header {
   backdrop-filter: saturate(180%) blur(20px);
   top: 0;
   z-index: 999999;
+  transition: top ease-in-out 0.15s;
+}
+header.hidden {
+  top: -80px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  header.hidden {
+    top: -60px;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   header {

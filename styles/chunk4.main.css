@@ -258,6 +258,13 @@
   cursor: pointer;
 }
 
+.suspense {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .page-container {
   padding-top: 80px;
 }
@@ -300,6 +307,10 @@
 .page-container--section.product.mirror {
   flex-direction: row-reverse;
 }
+.page-container--section.product.mirror .product-card {
+  margin-left: 0;
+  margin-right: -60px;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .page-container--section.product.mirror {
     flex-direction: column-reverse;
@@ -322,6 +333,7 @@
   display: flex;
   flex-direction: column;
   max-width: 280px;
+  margin-left: -120px;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .page-container--section .product-card {
@@ -330,6 +342,7 @@
     align-items: center;
     width: 100vw;
     box-sizing: border-box;
+    margin-left: auto;
   }
   .page-container--section .product-card.omnipack {
     padding-top: 60px;
@@ -469,6 +482,16 @@
   }
   .page-container--section .video-wrapper .opack_preview_image {
     display: block;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .page-container--section .video-wrapper.omnifit {
+    height: 340px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .page-container--section .video-wrapper.omnifit img {
+    height: 340px;
   }
 }
 .page-container--section .video-wrapper video,

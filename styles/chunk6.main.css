@@ -951,6 +951,11 @@
 .percent .benefits .benefit .benefit-item:nth-child(odd) {
   margin-bottom: 24px;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .percent .benefits .benefit .benefit-item:nth-child(odd) {
+    margin-bottom: 16px;
+  }
+}
 .percent .benefits .benefit .benefit-item .benefit-icon {
   width: 42px;
   height: 42px;
@@ -1176,6 +1181,48 @@
     border-radius: 0 0 20px 20px;
   }
 }
+.omnipack-installation .installation-container .right-side .image-container .clickable {
+  font-family: var(--roboto);
+  font-size: 19px;
+  color: #ffffff;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.32);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 10;
+  border-radius: 26px;
+  line-height: 19px;
+  cursor: pointer;
+  padding: 10px 14px;
+  transition: background 0.12s ease-out;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .omnipack-installation .installation-container .right-side .image-container .clickable {
+    display: none;
+  }
+}
+.omnipack-installation .installation-container .right-side .image-container .clickable:hover {
+  background: rgba(0, 0, 0, 0.92);
+}
+.omnipack-installation .installation-container .right-side .image-container .clickable.nuc {
+  bottom: 150px;
+  left: 164px;
+}
+.omnipack-installation .installation-container .right-side .image-container .clickable.nuc.moved {
+  bottom: 40px;
+  left: 200px;
+}
+.omnipack-installation .installation-container .right-side .image-container .clickable.screen {
+  top: 240px;
+  left: 40px;
+}
+.omnipack-installation .installation-container .right-side .image-container .clickable.screen.moved {
+  top: 40px;
+  left: 0px;
+}
+.omnipack-installation .installation-container .right-side .image-container .clickable.hidden {
+  display: none;
+}
 .omnipack-installation .installation-container .right-side .image-container img {
   position: absolute;
   top: 0;
@@ -1331,6 +1378,7 @@
   .omnipack-trusted--container .trusted-tab .trusted-content .ur-plus-image {
     width: 100%;
     height: 12vh;
+    margin: 24px 0 0 0;
     background-repeat: no-repeat;
   }
 }
@@ -1362,15 +1410,15 @@
 .omnipack-trusted--container .trusted-tab .trusted-content .third-parties-image {
   width: 540px;
   height: 271px;
-  background-position: center -260px;
-  background-image: url(/assets/images/components.jpg);
-  background-size: cover;
+  background-image: url(/assets/images/partners-logos.png);
+  background-size: contain;
   margin: 44px 0 0 0;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .omnipack-trusted--container .trusted-tab .trusted-content .third-parties-image {
     width: 100%;
     height: 20vh;
+    margin: 24px 0 0 0;
     background-repeat: no-repeat;
     background-position: center;
   }

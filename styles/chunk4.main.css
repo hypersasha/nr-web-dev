@@ -94,7 +94,7 @@
 .contact-form .form-container {
   padding: 42px 32px;
   border-radius: 10px;
-  background: #F6F6F6;
+  background: #F5F5F7;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .contact-form .form-container {

@@ -96,6 +96,7 @@
   color: #FFFFFF;
 }
 .page-nav--container .page-nav-left .nav-tabs .tab.active a {
+  display: none;
   cursor: default;
 }
 .page-nav--container .page-nav-left .nav-tabs .tab.active a:hover {
@@ -106,6 +107,9 @@
 }
 .page-nav--container .page-nav-left .nav-tabs .tab:hover:not(.active) .tab-label {
   color: #FF9500;
+}
+.page-nav--container .page-nav-right a {
+  text-decoration: none;
 }
 .page-nav--container .page-nav-right .demo-button {
   display: block;
@@ -383,6 +387,10 @@
   align-items: center;
   flex-direction: row;
   margin-top: 12px;
+}
+.distributor-card--container .dist-info .website:hover span {
+  color: var(--orange-hover);
+  text-decoration: underline;
 }
 .distributor-card--container .dist-info .website a {
   position: absolute;
@@ -710,6 +718,13 @@
   .opack-intro .omnipack-intro-content .presentation-buttons .buttons-separator {
     display: none;
   }
+}
+.opack-intro .omnipack-intro-content .presentation-buttons .try-button a {
+  text-decoration: none;
+  color: #8E8E93;
+}
+.opack-intro .omnipack-intro-content .presentation-buttons .try-button a:hover {
+  color: var(--orange);
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .opack-intro .omnipack-intro-content .presentation-buttons .try-button {
@@ -1178,6 +1193,7 @@
 }
 .omnipack-installation {
   background: #070707;
+  padding-top: 80px;
   padding-bottom: 100px;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -1326,6 +1342,10 @@
   align-items: center;
   flex-direction: row;
 }
+.omnipack-installation .installation-container .left-side .begin-section a {
+  text-decoration: none;
+  flex-shrink: 0;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .omnipack-installation .installation-container .left-side .begin-section {
     display: none;
@@ -1448,6 +1468,10 @@
   flex-direction: row;
   align-items: center;
 }
+.omnipack-installation .begin-section--mobile a {
+  text-decoration: none;
+  flex-shrink: 0;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .omnipack-installation .begin-section--mobile {
     display: flex;
@@ -1462,10 +1486,9 @@
   letter-spacing: 0.02em;
   color: #FFFFFF;
   text-align: center;
-  padding: 18px 24px;
+  padding: 16px 24px;
   background: var(--orange);
   border-radius: 10px;
-  flex-shrink: 0;
 }
 .omnipack-installation .begin-section--mobile .begin-button:hover {
   cursor: pointer;
@@ -1481,7 +1504,7 @@
   color: #646464;
 }
 .omnipack-distributors {
-  padding: 20px 0 0 0;
+  padding: 80px 0 0 0;
 }
 .omnipack-distributors .content {
   max-width: 1260px;
@@ -1562,7 +1585,7 @@
   }
 }
 .omnipack-trusted {
-  padding: 100px 0;
+  padding: 100px 0 60px 0;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .omnipack-trusted {
@@ -1814,5 +1837,132 @@
   line-height: 14px;
   color: #8E8E93;
   padding-top: 40px;
+}
+
+.calculations-table {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999999;
+  overflow-y: auto;
+  overflow-x: scroll;
+  padding: 60px 0;
+}
+.calculations-table .table-container {
+  display: block;
+  position: relative;
+  width: 854px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #252525;
+  border-radius: 4px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+}
+.calculations-table .table-container h1 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.calculations-table .table-container h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  color: #8E8E93;
+  margin: 0;
+  padding-top: 8px;
+}
+.calculations-table .table-container .close-button {
+  width: 24px;
+  height: 24px;
+  right: 28px;
+  top: 28px;
+  padding: 12px;
+  position: absolute;
+  border-radius: 24px;
+}
+.calculations-table .table-container .close-button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.08);
+}
+.calculations-table .table-container .table .table-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.calculations-table .table-container .table .table-row:nth-child(even) {
+  background: rgba(255, 255, 255, 0.08);
+}
+.calculations-table .table-container .table .table-row.spacer {
+  margin-bottom: 24px;
+}
+.calculations-table .table-container .table .table-row .table-cell {
+  flex-shrink: 0;
+  width: 220px;
+  margin-right: 16px;
+  padding: 10px;
+}
+.calculations-table .table-container .table .table-row .table-cell:last-child {
+  margin-right: 0;
+}
+.calculations-table .table-container .table .table-row .table-cell:first-child {
+  width: 322px;
+}
+.calculations-table .table-container .table .table-row .table-cell:not(:first-child) h1,
+.calculations-table .table-container .table .table-row .table-cell:not(:first-child) h2,
+.calculations-table .table-container .table .table-row .table-cell:not(:first-child) h3,
+.calculations-table .table-container .table .table-row .table-cell:not(:first-child) h4,
+.calculations-table .table-container .table .table-row .table-cell:not(:first-child) p {
+  text-align: right;
+}
+.calculations-table .table-container .table .table-row .table-cell h1,
+.calculations-table .table-container .table .table-row .table-cell h2,
+.calculations-table .table-container .table .table-row .table-cell h3,
+.calculations-table .table-container .table .table-row .table-cell h4 {
+  margin: 0;
+  font-family: var(--roboto);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.calculations-table .table-container .table .table-row .table-cell h2 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.calculations-table .table-container .table .table-row .table-cell h3 {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0;
+}
+.calculations-table .table-container .table .table-row .table-cell h4 {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0;
+  color: #8E8E93;
+}
+.calculations-table .table-container .table .table-row .table-cell p {
+  font-family: var(--roboto);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.calculations-table .table-container .table .table-spacer {
+  height: 24px;
 }
 

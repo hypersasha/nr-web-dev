@@ -597,6 +597,9 @@
     width: 100%;
   }
 }
+.opack-intro .video-wrapper.end video {
+  opacity: 0;
+}
 .opack-intro .video-wrapper.end img {
   opacity: 1;
 }
@@ -617,6 +620,9 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+.opack-intro .video-wrapper img.animated {
+  transition: opacity 1.4s ease-in;
 }
 .opack-intro .omnipack-intro-content {
   margin-top: 40px;
@@ -1712,8 +1718,8 @@
   height: 24px;
 }
 .omnipack-trusted--container .trusted-tab .trusted-content .third-parties-image {
-  width: 540px;
-  height: 271px;
+  width: 492px;
+  height: 210px;
   background-image: url(/assets/images/partners-logos.png);
   background-size: contain;
   margin: 44px 0 0 0;
@@ -1735,7 +1741,6 @@
 }
 .omnipack-trusted--container .trusted-tab.gray p {
   color: #1D1D1F;
-  font-size: 19px;
 }
 .omnipack-trusted--container .trusted-tab.gray .trusted-content--title {
   color: #000000;
@@ -1848,7 +1853,7 @@
   background: rgba(0, 0, 0, 0.9);
   z-index: 999999;
   overflow-y: auto;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: 60px 0;
 }
 .calculations-table .table-container {

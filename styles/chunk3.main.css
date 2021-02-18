@@ -693,6 +693,7 @@ section .section-text.centered {
     justify-content: stretch;
     padding-top: 20px;
     padding-bottom: 32px;
+    width: 100%;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -811,6 +812,11 @@ section .section-text.centered {
   opacity: 0.9;
   cursor: pointer;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .contact-form .form-container .form-button {
+    width: auto;
+  }
+}
 .button-loader {
   display: flex;
   flex-direction: row;
@@ -850,7 +856,7 @@ section .section-text.centered {
   }
 }
 .action-button-orange {
-  padding: 14px 16px;
+  padding: 16px 16px;
   border-radius: 10px;
   text-align: center;
   background: #ff9500;

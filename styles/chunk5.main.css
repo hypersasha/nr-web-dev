@@ -150,6 +150,7 @@
     justify-content: stretch;
     padding-top: 20px;
     padding-bottom: 32px;
+    width: 100%;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -268,6 +269,11 @@
   opacity: 0.9;
   cursor: pointer;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .contact-form .form-container .form-button {
+    width: auto;
+  }
+}
 .button-loader {
   display: flex;
   flex-direction: row;
@@ -307,7 +313,7 @@
   }
 }
 .action-button-orange {
-  padding: 14px 16px;
+  padding: 16px 16px;
   border-radius: 10px;
   text-align: center;
   background: #ff9500;
@@ -810,7 +816,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 1.4em;
-  color: #1D1D1F;
+  color: #2D2D2D;
   margin: 0;
   padding-top: 30px;
 }

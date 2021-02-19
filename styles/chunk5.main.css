@@ -180,22 +180,23 @@
   line-height: 32px;
   color: #000000;
   margin: 0;
-  padding-bottom: 12px;
+  padding-bottom: 24px;
   letter-spacing: -0.02em;
 }
 .contact-form .form-container .form-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--roboto);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.3em;
-  color: #000000;
+  color: #2d2d2d;
   width: 392px;
   margin: 0;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .contact-form .form-container .form-text {
     width: auto;
+    font-size: 19px;
   }
 }
 .contact-form .form-container .form-inputs {
@@ -323,6 +324,12 @@
   color: #ffffff;
   font-weight: 500;
   letter-spacing: 0.01em;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .action-button-orange {
+    font-size: 17px;
+    letter-spacing: 0;
+  }
 }
 .action-button-orange.grey {
   background: #DCDCDC;
@@ -750,6 +757,10 @@
   overflow: hidden;
   margin: 0 40px;
 }
+.omnipack-bordered.rose,
+.omnipack-noborders.rose {
+  background: #FAF4EE;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .omnipack-bordered,
   .omnipack-noborders {
@@ -838,7 +849,7 @@
 }
 .omnipack-bordered .content .content-image.protection,
 .omnipack-noborders .content .content-image.protection {
-  background-image: url(/assets/images/antpc.jpg);
+  background-image: url(/assets/images/antpc_red.jpg);
   width: 761px;
   height: 684px;
 }
@@ -907,6 +918,7 @@
 }
 .omnipack-noborders .content .content-text .compare-table th:not(:first-child) {
   border-left: none;
+  text-align: right;
 }
 .omnipack-noborders .content .content-text .compare-table th:first-child {
   border-radius: 4px 0 0 0;
@@ -937,6 +949,7 @@
 }
 .omnipack-noborders .content .content-text .compare-table tbody tr td:not(:first-child) {
   border-left: none;
+  text-align: right;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .omnipack-noborders .content .content-text .compare-table tbody tr td {
@@ -976,6 +989,9 @@
 }
 .omnipack-noborders .content .compare-info-rows .inforow {
   margin-bottom: 16px;
+}
+.omnipack-noborders .content .compare-info-rows .inforow:last-child {
+  margin: 0;
 }
 .omnipack-noborders .content .compare-info-rows .inforow-label {
   margin: 0;
@@ -1817,12 +1833,12 @@
 .omnipack-begin .container .what-in-box h1 {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 32px;
   line-height: 120%;
   text-align: center;
   letter-spacing: -0.03em;
-  margin: 0 0 40px;
+  margin: 0 0 24px;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .omnipack-begin .container .what-in-box h1 {

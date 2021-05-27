@@ -197,16 +197,39 @@ section.nr-fanuc {
 section.nr-fanuc .nr-logo {
   width: 199px;
   height: 32px;
+  position: relative;
+}
+section.nr-fanuc .nr-logo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+section.nr-fanuc .nr-logo:active {
+  margin-top: 2px;
 }
 section.nr-fanuc .fanuc-logo {
   width: 176px;
   height: 28px;
+  position: relative;
+}
+section.nr-fanuc .fanuc-logo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+section.nr-fanuc .fanuc-logo:active {
+  margin-top: 2px;
 }
 section.nr-fanuc .nr-x-fan {
   width: 24px;
   height: 24px;
   margin-left: 36px;
   margin-right: 36px;
+  position: relative;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   section.nr-fanuc .nr-x-fan {

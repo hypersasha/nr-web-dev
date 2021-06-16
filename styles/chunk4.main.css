@@ -477,7 +477,7 @@
   z-index: 1;
   display: flex;
   justify-content: center;
-  background: #cecdce;
+  background: #f4f4f4;
 }
 .page-container--section .video-wrapper .opack_preview_image {
   display: none;
@@ -489,7 +489,7 @@
   right: 0;
   bottom: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.15);
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .page-container--section .video-wrapper .video-cover {
